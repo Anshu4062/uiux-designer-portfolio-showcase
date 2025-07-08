@@ -34,7 +34,7 @@ const Hero = () => {
         <p className="text-lg">Get In Touch</p>
       </RainbowButton>
       <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-8xl font-thin scout-font">Hi, I'm John Doe</h1>
+        <h1 className="text-8xl font-thin scout-font mt-50 mb-10">Hi, I'm Suryansh Singh</h1>
         <p className="text-lg inclusive-sans">
           UI/UX Designer and Frontend Developer, creating simple and useful
           experiences.

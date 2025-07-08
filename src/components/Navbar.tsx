@@ -256,7 +256,7 @@ export function Navbar() {
   return (
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
       <TooltipProvider>
-        <Dock direction="middle">
+        <Dock className="rounded-full" direction="middle">
           {DATA.navbar.map((item) => (
             <DockIcon key={item.label}>
               <Tooltip>
