@@ -16,8 +16,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       {/*will add to hero section https://magicui.design/docs/components/icon-cloud*/}
-      <AboutSection />
       <WorkSection />
+      <AboutSection />
       <WorkExperienceSection />
       {/*<Testimonials /> --> https://magicui.design/docs/components/marquee https://magicui.design/docs/components/pointer
       <Contact />

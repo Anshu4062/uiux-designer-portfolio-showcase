@@ -1,7 +1,7 @@
 import React from "react";
 import { RainbowButton } from "./magicui/rainbow-button";
 
-import forest from "./images/forest.jpg"; // Path is now inside src
+import forest from "./images/forest.jpg";
 
 const Hero = () => {
   return (
@@ -38,14 +38,16 @@ const Hero = () => {
       >
         <p className="text-lg">Get In Touch</p>
       </RainbowButton>
-      <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-9xl font-thin scout-font mt-50 mb-10 text-gray-50">
+      <div className="flex flex-col items-center justify-center text-center">
+        <h1 className="rockhill-rough text-[10vw] font-thin scout-font mt-30 mb-10 text-gray-50 ">
           Hi, I&apos;m Suryansh Singh
         </h1>
-        <p className="text-lg inclusive-sans text-gray-50">
+        <p className="rockhill-regular text-5xl  text-gray-50">
           <span className="scout-font font-thin ">UI/UX Designer</span> and{" "}
-          <span className="scout-font font-thin">Frontend Developer</span>,
-          creating simple and useful experiences.
+          <span className="scout-font font-thin">
+            <u>Web Developer</u>
+          </span>
+          , creating simple and useful experiences
         </p>
       </div>
     </div>
