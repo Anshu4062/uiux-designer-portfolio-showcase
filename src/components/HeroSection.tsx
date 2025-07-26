@@ -1,10 +1,15 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { RainbowButton } from "./magicui/rainbow-button";
 
+import forest from "./images/forest.jpg"; // Path is now inside src
+
 const Hero = () => {
   return (
-    <div className="h-screen w-full bg-gradient-to-br from-emerald-300 via-teal-400 to-cyan-500">
+    <div
+      className="h-screen bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${forest.src})` }}
+    >
+      {/* className="h-screen w-full bg-gradient-to-br from-emerald-300 via-teal-400 to-cyan-500" */}
       <svg
         className="top-1/40 right-1/60"
         width="200"
@@ -29,13 +34,13 @@ const Hero = () => {
       <RainbowButton
         variant={"outline"}
         size={"lg"}
-        className="border border-2 rounded-full absolute top-1/40 right-1/60"
+        className="border-2 rounded-full absolute top-1/40 right-1/60"
       >
         <p className="text-lg">Get In Touch</p>
       </RainbowButton>
       <div className="flex flex-col items-center justify-center ">
         <h1 className="text-9xl font-thin scout-font mt-50 mb-10 text-gray-50">
-          Hi, I'm Suryansh Singh
+          Hi, I&apos;m Suryansh Singh
         </h1>
         <p className="text-lg inclusive-sans text-gray-50">
           <span className="scout-font font-thin ">UI/UX Designer</span> and{" "}

@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 "use client";
 
 import React, { ReactNode, useEffect, useRef } from "react";
@@ -228,7 +229,7 @@ interface CoolModeProps {
 }
 
 export const CoolMode: React.FC<CoolModeProps> = ({ children, options }) => {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (ref.current) {
@@ -236,5 +237,5 @@ export const CoolMode: React.FC<CoolModeProps> = ({ children, options }) => {
     }
   }, [options]);
 
-  return React.cloneElement(children as React.ReactElement, { ref });
+  return <div ref={ref}>{children}</div>;
 };

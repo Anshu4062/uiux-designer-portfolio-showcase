@@ -13,7 +13,7 @@ export default function Home() {
     <div className="h-screen w-full inclusive-sans">
       <Meteors />
       {/* <LiquidGlass borderRadius={20} blur={1} width={20} height={20} /> */}
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
       {/*will add to hero section https://magicui.design/docs/components/icon-cloud*/}
       <AboutSection />
